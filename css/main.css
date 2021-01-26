@@ -1,0 +1,18 @@
+h1 {
+  color: white;
+  padding: 5px 10px;
+  background: #1f706c; }
+
+nav a {
+  color: white;
+  background: #1f706c;
+  margin: 0 3px; }
+
+.logo {
+  width: 150px;
+  margin: 25px 0; }
+
+.container {
+  background: #0c1312;
+  margin: 20px 0;
+  padding: 0; }

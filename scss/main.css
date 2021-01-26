@@ -1,0 +1,86 @@
+nav a {
+  color: white;
+  background: #1f706c;
+  min-width: 100px;
+  margin: 0 2px;
+}
+
+nav a:hover {
+  color: white;
+}
+
+.overlay {
+  background: #052220 !important;
+  color: white;
+}
+
+.logo {
+  width: 150px;
+}
+
+.logo h1 {
+  width: 100%;
+  margin: 20px 0;
+  color: white;
+  background: #1f706c;
+}
+
+.container {
+  background: #062e2c;
+  color: white;
+  margin: 20px 0;
+  padding: 0;
+}
+
+.container .mainBody {
+  padding: 30px;
+  border: 10px solid #1f706c;
+}
+
+.container .mainBody h1 {
+  font-size: 65px;
+}
+
+.container .mainBody span {
+  margin-left: 60px;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f1f1f1;
+  min-width: 160px;
+  -webkit-box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+          box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  display: block;
+  padding: 12px 16px;
+  font-size: 13px;
+  text-decoration: none;
+}
+
+.dropdown-content a:hover {
+  background: #052220;
+}
+
+.show {
+  display: block;
+}
+
+.articlesBody .fas {
+  font-size: 40px;
+  background: #ccc;
+  margin: 0 20px;
+  padding: 5px;
+  -webkit-transition: .2s ease-in-out;
+  transition: .2s ease-in-out;
+}
+
+.articlesBody .fas:hover {
+  background: #062e2c;
+  cursor: pointer;
+}
+/*# sourceMappingURL=main.css.map */

@@ -1,0 +1,27 @@
+{
+  "name": "condor",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/DimitarStBC/condor.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/DimitarStBC/condor/issues"
+  },
+  "homepage": "https://github.com/DimitarStBC/condor#readme",
+  "dependencies": {
+    "bootstrap": "^5.0.0-beta1",
+    "gulp": "^4.0.2",
+    "gulp-uglifycss": "^1.1.0"
+  },
+  "devDependencies": {
+    "gulp-sass": "^4.1.0"
+  }
+}
