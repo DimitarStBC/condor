@@ -3,6 +3,7 @@ nav a {
   background: #1f706c;
   min-width: 100px;
   margin: 0 2px;
+  cursor: pointer;
 }
 
 nav a:hover {
@@ -16,25 +17,36 @@ nav a:hover {
 
 .logo {
   width: 150px;
+  height: 100px;
+  position: relative;
 }
 
 .logo h1 {
   width: 100%;
-  margin: 20px 0;
+  position: absolute;
+  top: 20px;
   color: white;
   background: #1f706c;
+  font-family: 'Londrina Solid', cursive;
 }
 
 .container {
   background: #062e2c;
   color: white;
   margin: 20px 0;
-  padding: 0;
+  padding: 0 !important;
 }
 
 .container .mainBody {
   padding: 30px;
   border: 10px solid #1f706c;
+  width: 70%;
+}
+
+@media (max-width: 768px) {
+  .container .mainBody {
+    width: 100%;
+  }
 }
 
 .container .mainBody h1 {
@@ -70,11 +82,29 @@ nav a:hover {
   display: block;
 }
 
+.articlesBody {
+  border: 10px solid #092e2c;
+  width: 30%;
+  padding: 10px;
+}
+
+@media (max-width: 768px) {
+  .articlesBody {
+    width: 100%;
+  }
+}
+
+.articlesBody h1 {
+  font-size: 25px;
+  text-transform: uppercase;
+  margin: 20px 5px;
+}
+
 .articlesBody .fas {
-  font-size: 40px;
+  font-size: 20px;
   background: #ccc;
-  margin: 0 20px;
-  padding: 5px;
+  margin: 5px;
+  padding: 8px;
   -webkit-transition: .2s ease-in-out;
   transition: .2s ease-in-out;
 }
@@ -82,5 +112,78 @@ nav a:hover {
 .articlesBody .fas:hover {
   background: #062e2c;
   cursor: pointer;
+}
+
+.articlesBody a {
+  display: block;
+  color: white;
+  margin: 0 5px;
+  text-transform: capitalize;
+  -webkit-transition: .2s ease-in-out;
+  transition: .2s ease-in-out;
+}
+
+.articlesBody a:hover {
+  color: #9addda;
+}
+
+.logoAbsolute {
+  position: absolute;
+  top: 120px;
+  background: #1f706c;
+  padding: 10px;
+  color: white;
+  font-family: 'Londrina Solid', cursive;
+}
+
+@media (max-width: 768px) {
+  .logoAbsolute {
+    display: none;
+  }
+}
+
+.logoAbsolute span {
+  font-size: 40px;
+  display: block;
+  line-height: 30px;
+}
+
+@media (max-width: 768px) {
+  .breakingPoint {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+
+@media (max-width: 768px) {
+  footer {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    padding: 20px 0;
+  }
+}
+
+footer h2 {
+  font-size: 16px;
+  margin: 0 20px;
+}
+
+footer ul li {
+  margin: 10px;
+  list-style-type: none;
+}
+
+footer ul li a {
+  color: white;
+  -webkit-transition: .2s ease-in-out;
+  transition: .2s ease-in-out;
+}
+
+footer ul li a:hover {
+  color: #9addda;
 }
 /*# sourceMappingURL=main.css.map */

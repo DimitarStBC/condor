@@ -2,12 +2,14 @@ $colorFont : white
 $colorBackground : #1f706c
 $containerBackground: #062e2c
 $overlayColor: #052220
+$articleBorder: #092e2c
 
 nav a
     color: $colorFont
     background: $colorBackground
     min-width: 100px
     margin: 0 2px
+    cursor: pointer
     &:hover
         color: $colorFont
 
@@ -16,21 +18,28 @@ nav a
     color: $colorFont
 .logo
     width: 150px
+    height: 100px
+    position: relative
     h1
         width: 100%
-        margin: 20px 0
+        position: absolute
+        top: 20px
         color: $colorFont
         background: $colorBackground
+        font-family: 'Londrina Solid', cursive
 
 .container
     background: $containerBackground
     color: $colorFont
     margin: 20px 0
-    padding: 0
+    padding: 0 !important
 
     .mainBody
         padding: 30px
         border: 10px solid $colorBackground
+        width: 70%
+        @media ( max-width: 768px )
+            width: 100%
         h1
             font-size: 65px
         span
@@ -54,12 +63,63 @@ nav a
     display: block
 
 .articlesBody
+    border: 10px solid $articleBorder
+    width: 30%
+    padding: 10px
+    @media ( max-width: 768px )
+        width: 100%
+    h1
+        font-size: 25px
+        text-transform: uppercase
+        margin: 20px 5px
     .fas
-        font-size: 40px
+        font-size: 20px
         background: #ccc
-        margin: 0 20px
-        padding: 5px
+        margin: 5px
+        padding: 8px
         transition: .2s ease-in-out
         &:hover
             background: $containerBackground
             cursor: pointer
+    a
+        display: block
+        color: white
+        margin: 0 5px
+        text-transform: capitalize
+        transition: .2s ease-in-out
+        &:hover
+            color: #9addda
+
+.logoAbsolute
+    position: absolute
+    top: 120px
+    background: $colorBackground
+    padding: 10px
+    color: white
+    font-family: 'Londrina Solid', cursive
+
+    @media (max-width: 768px)
+        display: none
+    span
+        font-size: 40px
+        display: block
+        line-height: 30px
+.breakingPoint
+    @media ( max-width: 768px )
+        flex-direction: column
+
+footer
+    @media ( max-width: 768px )
+        flex-direction: column
+        padding: 20px 0
+    h2
+        font-size: 16px
+        margin: 0 20px
+    ul li
+        margin: 10px
+        list-style-type: none
+        & a
+            color: white
+            transition: .2s ease-in-out
+            &:hover
+                color: #9addda
